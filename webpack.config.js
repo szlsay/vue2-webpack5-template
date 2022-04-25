@@ -14,6 +14,12 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, './build'),
   },
+  devServer:{
+    port:3000,
+    hot:true,
+    open:true,
+    contentBase:'./build'
+  },
   module: {
     rules: [
       {

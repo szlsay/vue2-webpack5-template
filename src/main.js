@@ -1,7 +1,5 @@
-function component() {
-  const element = document.createElement('div')
-  element.innerHTML = 'hello'
-  return element
-}
-
-document.body.appendChild(component())
+import Vue from 'vue'
+import App from './App.vue'
+new Vue({
+  render: h => h(App)
+}).$mount('#app')
